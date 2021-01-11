@@ -1,0 +1,255 @@
+.cards {
+    max-width: 1200px;
+    /*margin: 0 auto;*/
+    display: grid;
+    grid-gap: 1rem;
+  }
+ .card-size{
+     height:300px;
+     border-radius: 4% !important;
+     background-color: #F4B8BE !important;
+ }
+ .dtlmenu{
+    border:1px solid rgba(0, 0, 0, 0.125);
+    max-width: 1200px;
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111 !important;
+    border-radius: 7px;
+    font-family: system-ui;
+  }
+  .firtli{
+      margin-left: 6%;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(3, 1fr); 
+        margin-top:3%;
+        margin-left: 11%;
+        margin-right:3%;
+    }
+    .dtlmenu{
+        margin-left: 11%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(3, 1fr); 
+        margin-top:7%;
+        margin-left: 11%;
+        margin-right:3%;
+    }
+    .dtlmenu{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top:5%;
+        margin-left: 3%;
+        margin-right:3%;
+    
+    }
+    .dtlmenu{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top:5%;
+        margin-left: 3%;
+        margin-right:3%;
+    
+    }
+    .dtlmenu{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top:5%;
+        margin-left: 3%;
+        margin-right:3%;
+    
+    }
+    .dtlmenu{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .cards { 
+        grid-template-columns: repeat(1, 1fr); 
+        margin-top:5% ; 
+        margin-left: 3%;
+        margin-right:3%;
+
+    }
+    .dtlmenu{
+        margin-left: 3%;
+        margin-right:3%;
+        margin-top: 2%;
+        height: 40Px;
+    }
+    .linecard{
+        position: absolute;
+        width: 335px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        top: 30%;
+        left: 5%;
+    }
+    .linecard2{
+        position: absolute;
+        width: 335px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        top: 53%;
+        left: 5%;
+    }
+    .linecard3{
+        position: absolute;
+        width: 335px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        top:77%;
+        left: 5%;
+    }
+    .engheader{
+        font-size: 18px;
+        text-align: center;
+    }
+    .locDetail{
+        width: 335px;
+        height: 16px;
+
+        font-family: Righteous;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 6%;
+        margin-left: 8%;
+        color: #FFFFFF;
+    }
+    p{
+        display:inline;
+        word-wrap: break-word;
+        font-family: system-ui;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    .nallu{
+        padding-left: 5%;
+    }
+    .gmap{
+        width: 335px;
+        height: 16px;
+        margin-top: 13%;
+        margin-left: 8%;
+        color: #FFFFFF;
+    }
+    .etiming{
+        width: 335px;
+        height: 16px;
+        margin-top: 13%;
+        margin-left: 8%;
+        color: #FFFFFF;
+    }
+    .footerinvitatio{
+      background-color: #111;
+      margin-top: 0%;
+      width: 100%;
+      height: 63px;
+      margin-left: .1%;
+      border-radius: 6px;
+    
+    }
+  }

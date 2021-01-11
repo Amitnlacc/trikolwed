@@ -1,0 +1,104 @@
+
+.dtlmenu{
+  border:1px solid rgba(0, 0, 0, 0.125);
+  max-width: 1200px;
+}
+.imagewrapper{
+  position:relative;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 7px;;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  .full-bg-img{
+    width: 385px;
+    border-radius: 8px;
+    left: calc(50% - 326px/2 + 1.5px);
+    top: calc(50% - 209px/2 - 231.5px);
+    margin-top:10%;
+}
+  .cards { 
+      grid-template-columns: repeat(1, 1fr); 
+      margin-top:5% ; 
+      margin-left: 3%;
+      margin-right:3%;
+
+  }
+  .dtlmenu{
+      margin-left: 3%;
+      margin-right:3%;
+      margin-top: 2%;
+      height: 40Px;
+  }
+  
+  p{
+      display:inline;
+      word-wrap: break-word;
+      font-family: system-ui;
+      font-size: 15px;
+      color: #FFFFFF;
+  }
+  
+  .imageDtl{
+    z-index: 1000;
+    position:absolute;
+    background-color: black;
+      opacity: 100%;
+      /*top: 79%;*/
+      height: 35px;
+      width: 385px;
+      border-radius: 5px;
+  }
+  .descstyle{
+    color:white;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: bold;
+    display:block;
+    margin-bottom: 0px;
+    padding:1%;
+    text-align: center;
+  }
+  .footerinvitatioloc{
+    background-color: #111;
+    margin-top: 3%;
+    width: 93%;
+    height: 63px;
+    margin-left: 3.1%;
+    border-radius: 6px;
+  
+  }
+}
